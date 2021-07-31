@@ -3752,6 +3752,14 @@ input, select, textarea {
 					    margin-bottom: 5%;
 					}
 
+					#banner h2 {
+						font-size: 1.25em;
+					}
+
+					#banner p {
+						font-size: 0.75em;
+					}
+
 				}
 
 /*		@media screen and (max-width: 736px) {
