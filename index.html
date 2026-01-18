@@ -1,120 +1,483 @@
 <!DOCTYPE HTML>
 <!--
-	Solid State by HTML5 UP
+	Read Only by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Home</title>
+		<title>Diego Gonzalez-Hernandez | Physicist & Machine Learning Researcher</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body>  <!-- class="is-preload" for animations -->
+	<body class="is-preload">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/portrait.jpg" alt="" /></span>
+					<h1 id="logo"><a href="#">Diego Gonzalez-Hernandez</a></h1>
+					<p>Physicist applying ML and statistics methods to cosmological problems</p>
+				</header>
+				<nav id="nav">
+					<ul>
+						<li><a href="#one" class="active">About Me</a></li>
+						<li><a href="#two">Research Projects</a></li>
+						<li><a href="#three">Publications & Presentations</a></li>
+						<li><a href="#four">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="https://linkedin.com/in/diego-gon-her/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/diego-gonher" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="mailto:dgonzalezhernandez@ucsb.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">Diego Gonzalez-Hernandez</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="aboutme.html">About Me</a></li>
-								<li><a href="research.html">Research</a></li>
-								<li><a href="outreach.html">Outreach</a></li>
-								<li><a href="art.html">Art</a></li>
-								<li><a href="index_es.html">Español</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+				<!-- Main -->
+					<div id="main">
 
-				<!-- Banner, id="banner" for top, id="wrapper for bottom" -->
-					<section id="banner">
-						<div class="inner">
-							<h2>Diego Gonzalez-Hernandez</h2>
-							<p>Astrophysics PhD candidate at UC Santa Barbara. NASA FINESST recipient. Intern at Lawrence-Berkeley National Lab.</p>
-						</div>
+						<!-- About Me -->
+							<section id="one">
+								<div class="image main" data-position="center">
+									<img src="images/jwst_nebula.png" alt="" />
+								</div>
+								<div class="container">
+									<header class="major">
+										<h2>About Me</h2>
+										<p>Ph.D. Candidate in Physics and Astronomy<br />
+										University of California, Santa Barbara</p>
+									</header>
+									<p>I am a physicist using machine learning to (i) emulate cosmological simulations, (ii) apply ML-based parameter inference methods, and (iii) create foundational models for science. </p>
+									<p>As a part of the ENIGMA group (under the supervision of Dr. Joseph F. Hennawi), my research focuses on combining statistics, machine learning, and high-performance computing to enable, improve, and accelerate parameter estimation of cosmological models, particularly for studying the Epoch of Cosmic Reionization (EoR) using the Lyman-alpha forest. I am a recipient of the NASA FINESST Fellowship, which supports my research on inference pipelines for the EoR.</p>
+									<p>I am also currently a Research Scientist Intern at Lawrence Berkeley National Lab, working within the Computational Cosmology Center (Scientific Data Division) on creating a foundational machine learning model for hydrodynamical cosmological simulations.</p>
+									<ul class="actions">
+										<li><a href="https://drive.google.com/file/d/1B_0uLstNbg1VKeNMckIeALf9DzSxIV6F/view" class="button primary">CV</a></li>
+									</ul>
+								</div>
+							</section>
 
-						<!-- <header>
-							<div class="inner">
-								<h2>Diego Gonzalez-Hernandez</h2>
-								<p>Astrophysics PhD candidate at UC Santa Barbara. NASA FINESST recipient. Intern at Lawrence-Berkeley National Lab.</p>
-							</div>
-						</header> -->
-					</section>
-
-				<!-- Wrapper -->
-					<section id="wrapper">
-
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/portrait.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Hello there!</h2>
-										<p>My name is Diego, and I'm a PhD candidate at <a href="https://www.physics.ucsb.edu/">UC Santa Barbara</a>, where I am part of the ENIGMA group. My work is at the intersection of machine learning, statistics and cosmology. Take a look around my website to learn more about me and my work!</p>
-										<a href="aboutme.html" class="special">About me</a>
+						<!-- Research Projects -->
+							<section id="two">
+								<div class="container">
+									<h3>Research Projects</h3>
+									<p>My research spans multiple areas at the intersection of physics, machine learning, and high-performance computing.</p>
+									<div class="features">
+										<article>
+											<div class="inner">
+												<h4>Foundational Machine Learning Model</h4>
+												<p>Creating a dataset of cosmological hydrodynamical simulations to model the effects of varying the reionization history on the Lyman-alpha forest, executed on the Frontier computer at ORNL and the Perlmutter computer at NERSC. Using Vector Quantization Generative Adversarial Networks (VQ-GANs) to tokenize multidimensional outputs from simulations and exploring the feasibility of using transformers to create a foundational machine learning model for the Lyman-alpha forest.</p>
+												
+											</div>
+										</article>
+										<article>
+											<div class="inner">
+												<h4>Simulation Based Inference</h4>
+												<p>Created a dataset of mock observations of the power spectrum of the Lyman-alpha forest using the output from a hydrodynamical simulation and a stochastic forward model. Trained and tested the Balanced Neural Ratio Estimation (BNRE) algorithm on the dataset. Performed coverage tests and demonstrated the effectiveness of likelihood-free inference methods in improving the validity of parameter inference in the study of the Epoch of Reionization.</p>
+												<span class="image fit"><img src="images/BNRE-Diagram-PNG.png" alt="" /></span>
+											</div>
+										</article>
+										<article>
+											<div class="inner">
+												<h4>Neural Emulators and Hamiltonian Monte Carlo</h4>
+												<p>Created a dataset of cosmological simulations to model the effects of varying the reionization history on the Lyman-alpha forest. Used deep neural networks to create surrogates for the mean power spectrum and covariance matrices of the Lyman-alpha forest. Used Hamiltonian Monte Carlo to further accelerate inference.</p>
+												<span class="image fit"><img src="images/covar_median_example400.png" alt="" /></span>
+											</div>
+										</article>
+										<article>
+											<div class="inner">
+												<h4>Radiative Transfer Simulations</h4>
+												<p>Modified a radiative transfer simulation code to model the complex circumstellar structure around MWC-297, a high-luminosity young stellar object. Developed pipeline that creates synthetic visualizations of direct imaging from the simulation outputs.</p>
+												<span class="image fit"><img src="images/RT_vizualization.png" alt="" /></span>
+											</div>
+										</article>
 									</div>
 								</div>
 							</section>
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<section class="features">
-										<article>
-											<a href="research.html" class="image"><img src="images/igmweb_large.gif" alt="" /></a>
-											<h3 class="major">Research</h3>
-											<p>I'm interested in cosmology, statistics and machine learning. My current projects mostly involve enabling and improving constraints on the Epoch of Cosmic Reionization using a combination of statistics and ML algorithms.</p>
-											<a href="research.html" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="outreach.html" class="image"><img src="images/hielo_oceanico.jpg" alt="" /></a>
-											<h3 class="major">Outreach</h3>
-											<p>Bringing science to a wider audience is, in my opinion, an important part of being a scientist. Thus, I try to spend some of my time doing various outreach activities, especially in Spanish.</p>
-											<a href="outreach.html" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="art.html" class="image"><img src="images/genart_pfp.jpg" alt="" /></a>
-											<h3 class="major">Art</h3>
-											<p>I like to spend some of my free time doing generative art and making music!</p>
-											<a href="art.html" class="special">Learn more</a>
-										</article>
-									</section>
+						<!-- Publications -->
+							<section id="three">
+								<div class="container">
+									<h3>Publications & Presentations</h3>
+									<p>A selection of my recent work in machine learning for cosmology and astrophysics.</p>
+									<h4>Publications</h4>
+									<ul>
+										<li><strong>Reliable Parameter Inference for the Epoch of Reionization using Balanced Neural Ratio Estimation</strong> <i>D. Gonzalez-Hernandez, M. Wolfson, J. F. Hennawi</i><br>Accepted at the Machine Learning and the Physical Sciences Workshop (NeurIPS, 2025)</li>
+										<li><strong>Using Neural Emulators and Hamiltonian Monte Carlo to constrain the Epoch of Reionization's History with the Lya Forest Power Spectrum</strong> <i>D. Gonzalez-Hernandez, C. Doughty, M. Wolfson, J. F. Hennawi, J. Zhenyu</i><br>Submitted to the Monthly Notices of the Royal Astronomical Society for review (MNRAS, 2025)</li>
+										<li><strong>Neural Network Emulator to constrain the High-z IGM Thermal State from the Lyman-a Forest Flux Autocorrelation Function</strong> <i>J. Zhenyu, M. Wolfson, J. F. Hennawi, D. Gonzalez-Hernandez</i><br>Published in the Monthly Notices of the Royal Astronomical Society (MNRAS, 2025)</li>
+										<li><strong>Accelerating Statistical Inference in Astrophysics with Neural Networks and Hamiltonian Monte Carlo</strong> <i>D. Gonzalez-Hernandez, M. Wolfson, J. F. Hennawi</i><br>Accepted at the Structured Probabilistic Inference & Generative Modeling Workshop (ICML, 2024)</li>
+									</ul>
+									<br>
+									<h4>Recent Presentations</h4>
+									<ul>
+
+										<li><strong>Neural Simulation Based Inference for Physics</strong> - Lawrence Berkeley National Lab, High Energy Physics group (October 2025)</li>
+										<li><strong>Using Neural Emulators to Accelerate Inference in Cosmology</strong> - UCSB AI CoP Spring Symposium (May 2025)</li>
+										<li><strong>Emulating the EoR's History Dependent Power Spectra of the Lyman-a Forest</strong> - UCSB AstroLunch Seminar (April 2025)</li>
+										<li><strong>Applying BNRE to better constrain the Epoch of Cosmic Reionization</strong> - SBI Hackathon, Tübingen, Germany (March 2025)</li>
+									</ul>
 								</div>
 							</section>
 
-					</section>
+						<!-- Contact -->
+							<section id="four">
+								<div class="container">
+									<h3>Contact</h3>
+									<p>Feel free to reach out if you're interested in collaboration, have questions about my research, or would like to discuss opportunities.</p>
+									<ul class="feature-icons">
+										<li class="icon solid fa-map-marker-alt">Santa Barbara, CA</li>
+										<li class="icon solid fa-envelope"><a href="mailto:dgonzalezhernandez@ucsb.edu">dgonzalezhernandez@ucsb.edu</a></li>
+										<li class="icon brands fa-linkedin"><a href="https://linkedin.com/in/diego-gon-her/">linkedin.com/in/diego-gon-her/</a></li>
+										<li class="icon brands fa-github"><a href="https://github.com/diego-gonher">GitHub Profile</a></li>
+									</ul>
+									
+								</div>
+							</section>
+
+						<!-- Five -->
+						<!--
+							<section id="five">
+								<div class="container">
+									<h3>Elements</h3>
+
+									<section>
+										<h4>Text</h4>
+										<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+										This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+										This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+										<hr />
+										<header>
+											<h4>Heading with a Subtitle</h4>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<header>
+											<h5>Heading with a Subtitle</h5>
+											<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+										</header>
+										<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+										<hr />
+										<h2>Heading Level 2</h2>
+										<h3>Heading Level 3</h3>
+										<h4>Heading Level 4</h4>
+										<h5>Heading Level 5</h5>
+										<h6>Heading Level 6</h6>
+										<hr />
+										<h5>Blockquote</h5>
+										<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+										<h5>Preformatted</h5>
+										<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+									</section>
+
+									<section>
+										<h4>Lists</h4>
+										<div class="row">
+											<div class="col-6 col-12-xsmall">
+												<h5>Unordered</h5>
+												<ul>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+												<h5>Alternate</h5>
+												<ul class="alt">
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Sagittis adipiscing lorem eleifend.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<h5>Ordered</h5>
+												<ol>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+													<li>Dolor pulvinar etiam magna etiam.</li>
+													<li>Etiam vel felis at lorem sed viverra.</li>
+													<li>Felis enim feugiat dolore viverra.</li>
+												</ol>
+												<h5>Icons</h5>
+												<ul class="icons">
+													<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+													<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+													<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+													<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+													<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+													<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<h5>Actions</h5>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+										<ul class="actions small">
+											<li><a href="#" class="button primary small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<div class="row">
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary">Default</a></li>
+													<li><a href="#" class="button">Default</a></li>
+													<li><a href="#" class="button alt">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6 col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small">Small</a></li>
+													<li><a href="#" class="button small">Small</a></li>
+													<li><a href="#" class="button alt small">Small</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary fit">Default</a></li>
+													<li><a href="#" class="button fit">Default</a></li>
+													<li><a href="#" class="button alt fit">Default</a></li>
+												</ul>
+											</div>
+											<div class="col-3 col-6-medium col-12-xsmall">
+												<ul class="actions stacked">
+													<li><a href="#" class="button primary small fit">Small</a></li>
+													<li><a href="#" class="button small fit">Small</a></li>
+													<li><a href="#" class="button alt small fit">Small</a></li>
+												</ul>
+											</div>
+										</div>
+									</section>
+
+									<section>
+										<h4>Table</h4>
+										<h5>Default</h5>
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+
+										<h5>Alternate</h5>
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Description</th>
+														<th>Price</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Item One</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Two</td>
+														<td>Vis ac commodo adipiscing arcu aliquet.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Three</td>
+														<td> Morbi faucibus arcu accumsan lorem.</td>
+														<td>29.99</td>
+													</tr>
+													<tr>
+														<td>Item Four</td>
+														<td>Vitae integer tempus condimentum.</td>
+														<td>19.99</td>
+													</tr>
+													<tr>
+														<td>Item Five</td>
+														<td>Ante turpis integer aliquet porttitor.</td>
+														<td>29.99</td>
+													</tr>
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</section>
+
+									<section>
+										<h4>Buttons</h4>
+										<ul class="actions">
+											<li><a href="#" class="button primary">Primary</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Alternate</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary large">Large</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+										<ul class="actions fit">
+											<li><a href="#" class="button primary fit">Fit</a></li>
+											<li><a href="#" class="button fit">Fit</a></li>
+											<li><a href="#" class="button alt fit">Fit</a></li>
+										</ul>
+										<ul class="actions fit small">
+											<li><a href="#" class="button primary fit small">Fit + Small</a></li>
+											<li><a href="#" class="button fit small">Fit + Small</a></li>
+											<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+										</ul>
+										<ul class="actions">
+											<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+											<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+											<li><a href="#" class="button alt icon solid fa-check">Icon</a></li>
+										</ul>
+										<ul class="actions">
+											<li><span class="button primary disabled">Primary</span></li>
+											<li><span class="button disabled">Default</span></li>
+											<li><span class="button alt disabled">Alternate</span></li>
+										</ul>
+									</section>
+
+									<section>
+										<h4>Form</h4>
+										<form method="post" action="#">
+											<div class="row gtr-uniform">
+												<div class="col-6 col-12-xsmall">
+													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-xsmall">
+													<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Category -</option>
+														<option value="1">Manufacturing</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+													<label for="demo-priority-low">Low Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-normal" name="demo-priority">
+													<label for="demo-priority-normal">Normal Priority</label>
+												</div>
+												<div class="col-4 col-12-medium">
+													<input type="radio" id="demo-priority-high" name="demo-priority">
+													<label for="demo-priority-high">High Priority</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-copy" name="demo-copy">
+													<label for="demo-copy">Email me a copy of this message</label>
+												</div>
+												<div class="col-6 col-12-medium">
+													<input type="checkbox" id="demo-human" name="demo-human" checked>
+													<label for="demo-human">I am a human and not a robot</label>
+												</div>
+												<div class="col-12">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" /></li>
+														<li><input type="reset" value="Reset" class="alt" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+									<section>
+										<h4>Image</h4>
+										<h5>Fit</h5>
+										<span class="image fit"><img src="images/jwst_nebula.png" alt="" /></span>
+										<div class="box alt">
+											<div class="row gtr-50 gtr-uniform">
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+												<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											</div>
+										</div>
+										<h5>Left &amp; Right</h5>
+										<p><span class="image left"><img src="images/portrait.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+										<p><span class="image right"><img src="images/portrait.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</section>
+
+								</div>
+							</section>
+						-->
+
+					</div>
 
 				<!-- Footer -->
 					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Broida Hall Office 2207 <br />
-									Santa Barbara, CA 93106, USA
-								</li>
-								<li class="icon solid fa-envelope">dgonzalezhernandez@ucsb.edu</li>
-								<li class="icon brands fa-twitter"><a href="https://twitter.com/DiegoGonH">Twitter</a></li>
-								<li class="icon brands fa-github"><a href="https://github.com/diego-gonher">GitHub</a></li>
-								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/diego-gonzalez-b509641b2/">Linkedin</a></li>
-							</ul>
+						<div class="container">
 							<ul class="copyright">
-								<li>&copy; Diego González Hernández. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Diego Gonzalez-Hernandez. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
@@ -124,6 +487,7 @@
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
